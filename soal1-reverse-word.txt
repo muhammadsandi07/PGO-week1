@@ -1,0 +1,35 @@
+PROGRAM REVERSE WORD
+DECLARE newArr = [], temp = string, reversed
+BEGIN
+    INPUT(word)
+    IF word != String:
+        OUTPUT("inputan text harus string")
+    ELSE :
+        IF length of word <= 0:
+            OUTPUT("panjang text harus lebih dari 0")
+        ELSE:
+            i = 0
+            j = 0
+            WHILE i <= length of word -1:
+                IF word[i] == " ":
+                    newArr[j] = temp
+                    temp = ""
+                    j = j+1
+                ELSE:
+                    temp = temp + word[i]
+                END IF
+                i = i +1
+            END WHILE
+            k = length of newArr
+            WHILE  k >=0:
+                IF k > 0:
+                    reversed += newArr[k] +" "
+                ELSE:
+                    reversed += newArr[k] 
+                END IF
+                k = k - 1
+            END WHILE
+            OUTPUT(reversed)
+        END IF
+    END IF
+END

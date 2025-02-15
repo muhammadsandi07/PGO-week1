@@ -1,0 +1,26 @@
+PROGRAM Palindrom
+DECLARE temp = string
+BEGIN
+    INPUT(text)
+    IF text != String:
+        OUTPUT("inputan text harus string")
+    ELSE :
+        IF length of text<= 0:
+            OUTPUT("panjang text harus lebih dari 0")
+        ELSE:
+        i = length of text -1
+        text(lower)
+        WHILE i  >= 0:
+            IF text[i] != " ":
+                temp = temp + text[i]
+            END IF
+            i = i -1
+        END WHILE
+        IF temp = text:
+            OUTPUT("Palindrom")
+        ELSE:
+            OUTPUT("Palindrom")
+
+        OUTPUT(reversed)
+    END IF
+END
