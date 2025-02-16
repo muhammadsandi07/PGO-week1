@@ -11,7 +11,7 @@ const printSquare = (number) =>{
     let word = ""
     
     for(let i =1; i<= number; i++){
-        word += i + " "
+        word += i
     }
     for(let i =1; i<= number; i++){
         console.log(word)
